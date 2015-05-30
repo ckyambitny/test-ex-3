@@ -1,10 +1,11 @@
 var Animal = function () {
+    this.name = 'unknown';
+    this.legs = 0;
+    this.eyes = 0;
+
 };
 
 Animal.prototype = Animal.prototype || {
-    name: 'unknown',
-    legs: 0,
-    eyes: 0,
     getName: function () {
         return this.name;
     },
@@ -25,4 +26,5 @@ Animal.prototype = Animal.prototype || {
     }
 };
 
-
+var Tiger = function () {
+       
