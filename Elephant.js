@@ -1,3 +1,4 @@
+var Animal = require('Animal');
 var Elephant = function (name, legs, eyes) {
     this.name = name;
     this.legs = legs;
