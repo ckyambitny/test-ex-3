@@ -2,10 +2,9 @@ var Animal = function () {
     this.name = 'unknown';
     this.legs = 0;
     this.eyes = 0;
-
 };
 
-Animal.prototype = Animal.prototype || {
+Animal.prototype = {{
     getName: function () {
         return this.name;
     },
@@ -26,5 +25,8 @@ Animal.prototype = Animal.prototype || {
     }
 };
 
-var Tiger = function () {
-       
+if ( module.exports ) {
+    module.exports = Animal;
+} else {
+    this.Animal = Animal 
+};
