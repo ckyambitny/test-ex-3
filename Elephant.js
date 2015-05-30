@@ -4,10 +4,9 @@ var Elephant = function (name, legs, eyes) {
     this.eyes = eyes;
 };
 
-var animal2 = new Animal();
-Elephant.prototype = animal2.prototype;
+Elephant.prototype = new Animal();
 
-if ( module && module.exports ) {
+if ( ( typeof module === 'Object' ) && module.exports ) {
     module.exports = Elephant;
     } else {
     this.Elephant = Elephant;

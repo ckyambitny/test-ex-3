@@ -25,8 +25,8 @@ Animal.prototype = {
     }
 };
 
-if ( module && module.exports ) {
+if ( ( typeof module === 'Object' ) && module.exports ) {
     module.exports = Animal;
 } else {
-    this.Animal = Animal 
+    this.Animal = Animal;
 };

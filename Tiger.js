@@ -3,10 +3,9 @@ var Tiger = function (name, legs, eyes) {
     this. legs = legs;
     this.eyes = eyes;
 };
-var animal = new Animal();
-Tiger.prototype = animal.prototype;
+Tiger.prototype = new Animal();
 
-if ( module && module.exports ) {
+if ( ( typeof module === 'Object' ) && module.exports ) {
     module.exports = Tiger;
 } else {
     this.Tiger = Tiger;
