@@ -4,7 +4,8 @@ var Elephant = function (name, legs, eyes) {
     this.eyes = eyes;
 };
 
-Elephant.prototype = Animal.prototype;
+var animal2 = new Animal();
+Elephant.prototype = animal2.prototype;
 
 if ( module.exports ) {
     module.exports = Elephant;

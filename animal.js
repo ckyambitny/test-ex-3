@@ -4,7 +4,7 @@ var Animal = function () {
     this.eyes = 0;
 };
 
-Animal.prototype = {{
+Animal.prototype = {
     getName: function () {
         return this.name;
     },

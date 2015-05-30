@@ -3,8 +3,8 @@ var Tiger = function (name, legs, eyes) {
     this. legs = legs;
     this.eyes = eyes;
 };
-
-Tiger.prototype = Animal.prototype;
+var animal = new Animal();
+Tiger.prototype = animal.prototype;
 
 if ( module.exports ) {
     module.exports = Tiger;
