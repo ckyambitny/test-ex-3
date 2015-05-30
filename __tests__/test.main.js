@@ -14,18 +14,18 @@ describe('General', function () {
 
 describe('Animal', function () {
     it('Animal should have own prototype', function () {
-        expect(Animal.prototype).not.isEqual({});
+        expect(Animal.prototype).not.toEqual({});
     });
 });
 
 describe('Tiger', function () {
     it('Animal should have own prototype', function () {
-        expect(Tiger.prototype).not.isEqual({});
+        expect(Tiger.prototype).not.toEqual({});
     });
 });
 
 describe('Elephant', function () {
     it('Animal should have own prototype', function () {
-        expect(Elephant.prototype).not.isEqual({});
+        expect(Elephant.prototype).not.toBe({});
     });
 });
