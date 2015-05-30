@@ -1,8 +1,8 @@
-jest.dontMock('../Animal');
+jest.dontMock('../scripts/Animal');
 
-var Animal = require('../Animal');
-var Tiger = require('../Tiger');
-var Elephant = require('../Elephant');
+var Animal = require('../scripts/Animal');
+var Tiger = require('../scripts/Tiger');
+var Elephant = require('../scripts/Elephant');
 
 describe('General', function () {
     it('should list of constructor exists', function () {
