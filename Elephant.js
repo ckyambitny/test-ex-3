@@ -6,8 +6,8 @@ var Elephant = function (name, legs, eyes) {
 
 Elephant.prototype = new Animal();
 
-if ( ( typeof module === 'Object' ) && module.exports ) {
+if ( typeof module === 'object' && module.exports ) {
     module.exports = Elephant;
     } else {
     this.Elephant = Elephant;
-};
+} 
