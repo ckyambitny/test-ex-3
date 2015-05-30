@@ -6,7 +6,7 @@ var Tiger = function (name, legs, eyes) {
 var animal = new Animal();
 Tiger.prototype = animal.prototype;
 
-if ( module.exports ) {
+if ( module && module.exports ) {
     module.exports = Tiger;
 } else {
     this.Tiger = Tiger;
